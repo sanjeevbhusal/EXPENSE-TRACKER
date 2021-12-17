@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+    --box-shadow: 0px 1px 4px 1px rgba(199,199,199,1);
+    --income: green;
+    --expense:red;
+    --newsection:35px;
+    --marginh2:15px;
+}
+body{
+    font-family: 'Rubik',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    min-height: 100vh;
+    padding: 50px 0;
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: var(--newsection);
+}
+
+h2{
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-bottom: var(--marginh2);
+}
+
+.balance-container{
+text-align: center;
+/* margin-bottom: var(--newsection); */
+}
+
+
+.balance-container #balance{
+    font-size: 1.5em;
+    margin-bottom:var(--marginh2);
+    color: rgb(12, 156, 240);
+}
+
+.cashflow-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--box-shadow);
+    padding:20px;
+    margin-bottom: var(--newsection);
+}
+
+.income-container{
+     border-right: 1px solid grey; 
+     padding-right: 20px;
+}
+
+.expense-container{
+    padding-left: 20px;
+}
+
+.transaction-container{
+    margin-bottom: var(--newsection);
+}
+#income,
+#expense{
+    font-size: 1.3em;
+}
+
+#income{
+color:var(--income)
+}
+
+#expense{
+    color:var(--expense)
+}
+
+#transaction{
+    list-style: none;
+}
+
+#transaction li{
+    display: flex;
+}
+
+#transaction li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    margin-bottom:10px;
+    box-shadow: var(--box-shadow);
+}
+
+#transaction li p{
+    /* margin-right: 60px; */
+}
+
+#transaction li span{
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+#transaction li .income-amt{
+    background-color:var(--income);
+}
+
+#transaction li .expense-amt{
+    background-color:var(--expense);
+}
+
+#transaction li button{
+    padding: 5px 10px;
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container form label,
+#name,
+#amount{
+    margin-bottom: 10px;
+}
+
+#name,
+#amount{
+    height:30px;
+}
+
+#income-btn,
+#expense-btn{
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 50%;
+    margin: 5px auto;
+}
+
+#income-btn{
+    background-color:var(--income) ;
+}
+
+#expense-btn{
+    background-color:var(--expense) ;
+}
