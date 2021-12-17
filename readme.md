@@ -2,12 +2,11 @@
 # EXPENSE-TRACKER
 This is a basic vanilla Javascript project.
 
-
-
+https://expense-tracker-ecru-one.vercel.app/
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+<img width="950" alt="Screenshot 2021-12-17 220852" src="https://user-images.githubusercontent.com/79491041/146576088-551a1682-4f0f-4cc7-bcdb-a444c070c9d9.png">
 
 
 ## Features
